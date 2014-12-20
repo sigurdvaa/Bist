@@ -106,8 +106,9 @@ function galleriKontroller() {
     $('.gallerikontroll').on('click', function(){
         
         var nr = parseInt($('.show').attr('src').substring(21,23));
-        $('.show').attr('lowsrc', '');
-        $('.show').attr('lowsrc', 'assets/media/small-loader.gif');
+        $('.show').attr('src', '');
+        $('.show').attr('src', 'assets/media/small-loader.gif');
+
         if ($(this).hasClass('neste')) {            
             if (nr == 37) {
                 nr = 1;
@@ -129,9 +130,9 @@ function galleriKontroller() {
             }
             $('.show').attr('src', 'assets/media/galleri/' + nr + '.JPG');
         }
-        
+      
         });
-    
+
 }
 
 function gjemElementer(){
