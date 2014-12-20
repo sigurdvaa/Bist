@@ -107,7 +107,8 @@ function galleriKontroller() {
         
         var nr = parseInt($('.show').attr('src').substring(21,23));
         $('.show').attr('src', '');
-        $('.show').attr('src', 'assets/media/small-loader.gif');
+        $('.show').attr('lowsrc', '');
+        $('.show').attr('lowsrc', 'assets/media/small-loader.gif');
 
         if ($(this).hasClass('neste')) {            
             if (nr == 37) {
